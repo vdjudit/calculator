@@ -1,11 +1,15 @@
 import Operator from './Operator';
 import Num from './Num';
 import Equal from './Equal';
+import Display from "./Display"
 import styles from './Calculator.module.css';
 
 export default function Calculator() {
   return (
     <div className={styles.calculator}>
+      <div>
+        <Display/>
+      </div>
       <div>
         <Operator text="AC" />
         <Operator text="DE" />
